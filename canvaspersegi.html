@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas</title>
+    </head>
+    <body>
+       <canvas id="myCanvas" width="640" height="480" style="border:1px solid #000000"></canvas>
+       <script type="text/javascript">
+            var canvas= document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d")
+
+            // untuk nilai X
+            // for(x = 10; x <=500; x += 10){
+            //     ctx.strokeRect(x, 10, 10, 10)
+            // }
+
+            // untuk nilai Y
+            // for(y=10;y<=500; y+=10){
+            //     ctx.strokeRect(10,y,10,10);
+            // }
+
+            // untuk nilai x dan y berubah ubah
+            // x= y || y = x
+            // for(i=10;i<=500; i+=10){
+            //     ctx.strokeRect(i,i,10,10);
+            // }
+
+            //nested loop (1st assignment)
+            // for(x = 10; x <= 400; x += 10){
+            //     for(y = 10; y <= 400; y += 10){
+            //         ctx.strokeRect(x,y,10,10);
+            //     }
+            // }
+
+            // nested loop (2nd assignment)
+            for(x = 10; x <= 400; x += 10){
+                for(y = x; y <= 400; y += 10){
+                    ctx.strokeRect(x,y,10,10);
+                }
+            }
+        </script>
+    </body>
+</html>
